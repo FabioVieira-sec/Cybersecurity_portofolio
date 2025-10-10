@@ -15,8 +15,3 @@ Practical cybersecurity portfolio by Fábio Vieira
 
 
 🎖️Certifications.md
-
-
-⚠️ Ethics Notice
-All work demonstrated here was conducted in controlled environments for educational purposes only.  
-No unauthorized systems were accessed at any time.
