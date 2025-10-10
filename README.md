@@ -14,6 +14,8 @@ Practical cybersecurity portfolio by Fábio Vieira
 | ⚙️ Automation            | Scripts to automate tasks and improve efficiency             | [automation/](./automation) |
 
 
+🎖️Certifications.md
+
 
 ⚠️ Ethics Notice
 All work demonstrated here was conducted in controlled environments for educational purposes only.  
