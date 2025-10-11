@@ -12,6 +12,6 @@ Practical cybersecurity portfolio by Fábio Vieira
 | 🐧 Linux Administration  | System management, hardening & shell scripting               | [linux/](./linux) |
 | 🧮 SQL & Data Analysis   | Querying, reporting, and database forensics                  | [sql/](./sql) |
 | ⚙️ Automation            | Scripts to automate tasks and improve efficiency             | [automation/](./automation) |
-
+| 📄 Documentation         | Vulnerability Assessment Report, Audit Summary Report        | [documentation/](./documentation)
 
 🎖️Certifications.md
