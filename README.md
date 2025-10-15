@@ -14,4 +14,4 @@ Practical cybersecurity portfolio by Fábio Vieira
 | ⚙️ Automation            | Scripts to automate tasks and improve efficiency             | [automation/](./automation) |
 | 📄 Documentation         | Vulnerability Assessment Report, Audit Summary Report        | [documentation/](./documentation)
 
-🎖️Certifications.md
+
