@@ -8,7 +8,7 @@ Practical cybersecurity portfolio by Fábio Vieira
 | Skill                    | Description                                                  | Folder                         |
 |--------------------      |--------------------------------------------------------------|---------------------------------
 | 🔴 Pentesting            | Vulnerability discovery, exploitation & privilege escalation | [pentest/](./pentest) |
-| 🔵 Blue Team             | Detection, alerting, incident response & SIEM rules          | [blueteam/](./blueteam) |
+| 🔵 Blue Team             | Detection, alerting, incident response & SIEM tools          | [blueteam/](./blueteam) |
 | 🐧 Linux Administration  | System management, hardening & shell scripting               | [linux/](./linux) |
 | 🧮 SQL & Data Analysis   | Querying, reporting, and database forensics                  | [sql/](./sql) |
 | ⚙️ Automation            | Scripts to automate tasks and improve efficiency             | [automation/](./automation) |
