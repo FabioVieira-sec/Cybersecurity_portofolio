@@ -1,8 +1,8 @@
-<h1 align="center">🛡️ Practical Cybersecurity Portfolio by Fábio Vieira</h1>
+<h1 > Practical Cybersecurity Portfolio by Fábio Vieira</h1>
 
 ---
 
-<h2 align="center">👋 Welcome!</h2>
+<h2 >👋 Welcome!</h2>
 
 Hi! I’m Fábio, and this is my portfolio.  
 Here I share my work, projects, and everything I’m learning along my journey in technology.  
