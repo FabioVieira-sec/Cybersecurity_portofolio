@@ -15,7 +15,7 @@ I’m passionate about growing, creating, and continuously improving my skills.
 
 | Projects | Expertise Highlight |
 |-----------|---------------------|
-| [**🧩 Security Monitoring & SIEM**](siem/) | Log Analysis · Splunk · Wazuh · Elastic Stack · Correlation Rules · Detection Engineering · MITRE ATT&CK Mapping |
+| [**🧩 Security Monitoring & SIEM**](SIEM/) | Log Analysis · Splunk · Wazuh · Elastic Stack · Correlation Rules · Detection Engineering · MITRE ATT&CK Mapping |
 | [**🚨 Incident Detection & Response**](incidents/) | Incident Lifecycle · Alert Triage · Root Cause Analysis · Reporting & Escalation · NIST IR Framework · Incident Journals |
 | [**🎯 Threat Hunting & Intelligence**](threat-hunting/) | IOC Enrichment · Sigma & YARA Rules · MITRE ATT&CK Navigator · Adversary Emulation · Threat Actor Profiling |
 | [**🌐 Network Traffic Analysis**](network-analysis/) | Packet Capture · Zeek/Bro · Wireshark · DNS Analysis · C2 Detection · Lateral Movement · Protocol Investigation |
