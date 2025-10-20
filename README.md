@@ -20,7 +20,7 @@ I’m passionate about growing, creating, and continuously improving my skills.
 | [💻 **Endpoint Security & Forensics**](endpoint/) | Sysmon · Windows Event Logs · Linux Auditd · Process Monitoring · Persistence Detection · File Integrity Monitoring |
 | [🧱 **Vulnerability & Risk Management**](vulnerability-management/) | CVE Analysis · NIST CSF · CIS Benchmarks · Risk Assessment · Vulnerability Scanning · Compliance Checks |
 | [⚙️ **Automation & Scripting**](automation/) | Python · Bash · Log Parsing · IOC Lookup Automation · Threat Intelligence API Integration |
-| [🗂️ **Documentation & Reporting**](reports/) | SOC Playbooks · Incident Reports · Lessons Learned · SIEM Dashboards · Case Management (TheHive / JIRA) |
+| [🗂️ **Documentation & Reporting**](documentation/) | SOC Playbooks · Incident Reports · Lessons Learned · SIEM Dashboards · Case Management (TheHive / JIRA) |
 | [🎯 **Pentesting & Adversarial Simulation**](pentest/) | Vulnerability Discovery · Exploitation · Privilege Escalation · Lateral Movement · Post-Exploitation · Metasploit · Burp Suite · Kali Linux |
 | [🐧 **Linux & SQL Administration**](linux-sql/) | Linux System Management · Bash Scripting · Log Management · SQL Querying · Database Security · Hardening · User Privilege Control |
 
