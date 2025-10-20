@@ -2,6 +2,7 @@
 Practical cybersecurity portfolio by Fábio Vieira
 
 Welcome! 👋
+
 Hi! I’m Fábio, and this is my portfolio.
 Here I share my work, projects, and everything I’m learning along my journey in technology.
 I’m passionate about growing, creating, and continuously improving my skills.
