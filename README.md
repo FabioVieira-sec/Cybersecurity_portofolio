@@ -1,8 +1,8 @@
-#Practical cybersecurity portfolio by Fábio Vieira
+##Practical cybersecurity portfolio by Fábio Vieira (H2)
 
 ---
 
-##Welcome! 👋
+###Welcome! 👋 (H3)
 
 Hi! I’m Fábio, and this is my portfolio.
 Here I share my work, projects, and everything I’m learning along my journey in technology.
