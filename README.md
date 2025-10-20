@@ -15,12 +15,12 @@ I’m passionate about growing, creating, and continuously improving my skills.
 
 | Projects | Expertise Highlight |
 |-----------|---------------------|
-| [**🧩 Security Monitoring & SIEM**](SIEM/) | Log Analysis · Splunk · Wazuh · Elastic Stack · Correlation Rules · Detection Engineering · MITRE ATT&CK Mapping |
-| [**🚨 Incident Detection & Response**](incidents/) | Incident Lifecycle · Alert Triage · Root Cause Analysis · Reporting & Escalation · NIST IR Framework · Incident Journals |
-| [**🎯 Threat Hunting & Intelligence**](threat-hunting/) | IOC Enrichment · Sigma & YARA Rules · MITRE ATT&CK Navigator · Adversary Emulation · Threat Actor Profiling |
-| [**🌐 Network Traffic Analysis**](network-analysis/) | Packet Capture · Zeek/Bro · Wireshark · DNS Analysis · C2 Detection · Lateral Movement · Protocol Investigation |
-| [**💻 Endpoint Security & Forensics**](endpoint/) | Sysmon · Windows Event Logs · Linux Auditd · Process Monitoring · Persistence Detection · File Integrity Monitoring |
-| [**🧱 Vulnerability & Risk Management**](vulnerability-management/) | CVE Analysis · NIST CSF · CIS Benchmarks · Risk Assessment · Vulnerability Scanning · Compliance Checks |
-| [**⚙️ Automation & Scripting**](automation/) | Python · Bash · Log Parsing · IOC Lookup Automation · Threat Intelligence API Integration |
-| [**🗂️ Documentation & Reporting**](reports/) | SOC Playbooks · Incident Reports · Lessons Learned · SIEM Dashboards · Case Management (TheHive / JIRA) |
+| [🧠 **Security Monitoring, Detection & Response**](detection-response/) | Log Analysis · Correlation Rules · Alert Triage · Threat Hunting · Incident Response · MITRE ATT&CK Mapping · Splunk · Wazuh · Elastic Stack |
+| [🌐 **Network Traffic Analysis**](network-analysis/) | Packet Capture · Zeek/Bro · Wireshark · DNS Analysis · C2 Detection · Lateral Movement · Protocol Investigation |
+| [💻 **Endpoint Security & Forensics**](endpoint/) | Sysmon · Windows Event Logs · Linux Auditd · Process Monitoring · Persistence Detection · File Integrity Monitoring |
+| [🧱 **Vulnerability & Risk Management**](vulnerability-management/) | CVE Analysis · NIST CSF · CIS Benchmarks · Risk Assessment · Vulnerability Scanning · Compliance Checks |
+| [⚙️ **Automation & Scripting**](automation/) | Python · Bash · Log Parsing · IOC Lookup Automation · Threat Intelligence API Integration |
+| [🗂️ **Documentation & Reporting**](reports/) | SOC Playbooks · Incident Reports · Lessons Learned · SIEM Dashboards · Case Management (TheHive / JIRA) |
+| [🎯 **Pentesting & Adversarial Simulation**](pentest/) | Vulnerability Discovery · Exploitation · Privilege Escalation · Lateral Movement · Post-Exploitation · Metasploit · Burp Suite · Kali Linux |
+
 
