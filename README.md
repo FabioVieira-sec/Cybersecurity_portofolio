@@ -24,3 +24,4 @@ I’m passionate about growing, creating, and continuously improving my skills.
 | [🎯 **Pentesting & Adversarial Simulation**](pentest/) | Vulnerability Discovery · Exploitation · Privilege Escalation · Lateral Movement · Post-Exploitation · Metasploit · Burp Suite · Kali Linux |
 
 
+
