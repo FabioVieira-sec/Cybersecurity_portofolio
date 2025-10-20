@@ -14,13 +14,13 @@ I’m passionate about growing, creating, and continuously improving my skills.
 
 | Skill Camps | Skills  |
 |-----------|---------------------|
-| [🧠 **Security Monitoring, Detection & Response**](detection-response/) | Log Analysis · Correlation Rules · Alert Triage · Threat Hunting · Incident Response · MITRE ATT&CK Mapping · Splunk · Wazuh · Elastic Stack |
-| [🌐 **Network Traffic Analysis**](network-analysis/) | Packet Capture · Zeek/Bro · Wireshark · DNS Analysis · C2 Detection · Lateral Movement · Protocol Investigation |
-| [💻 **Endpoint Security & Forensics**](endpoint/) | Sysmon · Windows Event Logs · Linux Auditd · Process Monitoring · Persistence Detection · File Integrity Monitoring |
-| [🧱 **Vulnerability & Risk Management**](vulnerability-management/) | CVE Analysis · NIST CSF · CIS Benchmarks · Risk Assessment · Vulnerability Scanning · Compliance Checks |
-| [⚙️ **Automation & Scripting**](automation/) | Python · Bash · Log Parsing · IOC Lookup Automation · Threat Intelligence API Integration |
-| [🗂️ **Documentation & Reporting**](documentation/) | Audit Report · Incident Reports · Lessons Learned · SIEM Dashboards · Case Management (TheHive / JIRA) |
+| [🧠 **Security Monitoring, Detection & Response**](detection-response/) | SIEM Management · Log Analysis · Alert Correlation · Threat Detection · MITRE ATT&CK Mapping · Incident Handling · SOC Procedures |
+| [🌐 **Network Traffic Analysis**](network-analysis/) | Packet Inspection · DNS/HTTP Analysis · Wireshark · Zeek · tcpdump · Lateral Movement Detection · Network Protocol Investigation |
+| [💻 **Endpoint Security & Forensics**](endpoint/) | Sysmon · Windows Event Logs · Linux Auditd · Malware Behavior Analysis · Persistence Detection · File Integrity Monitoring |
+| [🧱 **Vulnerability & Risk Management**](vulnerability-management/) |Vulnerability Scanning (OpenVAS/Nessus) · CVSS Scoring · Patch Management · Risk Assessment · Compliance (CIS/NIST)  |
+| [⚙️ **Automation & Scripting**](automation/) | Python Automation · Log Parsing Scripts · IOC Enrichment · Threat Intelligence API Integration · Task Automation |
+| [🗂️ **Documentation & Reporting**](documentation/) | Audit Reports · Incident Reports · Lessons Learned · SOC Playbooks · SIEM Dashboards · Case Management (TheHive/JIRA) |
 | [🎯 **Pentesting & Adversarial Simulation**](pentest/) | Vulnerability Discovery · Exploitation · Privilege Escalation · Lateral Movement · Post-Exploitation · Metasploit · Burp Suite · Kali Linux |
-| [🐧 **Linux & SQL Administration**](linux-sql/) | Linux System Management · Bash Scripting · Log Management · SQL Querying · Database Security · Hardening · User Privilege Control |
+| [🐧 **Linux & SQL Administration**](linux-sql/) | Reconnaissance · Exploitation · Privilege Escalation · Post-Exploitation · Web Application Testing · Burp Suite · Metasploit |
 
 
