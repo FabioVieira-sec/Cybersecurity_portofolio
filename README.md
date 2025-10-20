@@ -13,7 +13,7 @@ I’m passionate about growing, creating, and continuously improving my skills.
 
  🧩 Index of Skills
 
-| Projects | Expertise Highlight |
+| Skill Camps | Skills  |
 |-----------|---------------------|
 | [🧠 **Security Monitoring, Detection & Response**](detection-response/) | Log Analysis · Correlation Rules · Alert Triage · Threat Hunting · Incident Response · MITRE ATT&CK Mapping · Splunk · Wazuh · Elastic Stack |
 | [🌐 **Network Traffic Analysis**](network-analysis/) | Packet Capture · Zeek/Bro · Wireshark · DNS Analysis · C2 Detection · Lateral Movement · Protocol Investigation |
