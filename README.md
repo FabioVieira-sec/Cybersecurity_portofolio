@@ -10,7 +10,7 @@ I’m passionate about growing, creating, and continuously improving my skills.
 
 
 
- 🧩 Index of Skills
+ 🧩 Index of Skills/Labs
 
 | Skill Camps | Skills  |
 |-----------|---------------------|
