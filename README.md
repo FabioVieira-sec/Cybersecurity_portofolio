@@ -18,7 +18,7 @@ I’m passionate about growing, creating, and continuously improving my skills.
 | [🌐 **Network Traffic Analysis**](network-analysis/) | Packet Inspection · DNS/HTTP Analysis · Wireshark · Zeek · tcpdump · Lateral Movement Detection · Network Protocol Investigation |
 | [💻 **Endpoint Security & Forensics**](endpoint/) | Sysmon · Windows Event Logs · Linux Auditd · Malware Behavior Analysis · Persistence Detection · File Integrity Monitoring |
 | [🧱 **Vulnerability & Risk Management**](vulnerability-management/) |Vulnerability Scanning (OpenVAS/Nessus) · CVSS Scoring · Patch Management · Risk Assessment · Compliance (CIS/NIST)  |
-| [⚙️ **Automation & Scripting**](automation/) | Python Automation · Log Parsing Scripts · IOC Enrichment · Threat Intelligence API Integration · Task Automation |
+| [⚙️ **Automation & Scripting**](automation/) | Python Automation · Log Parsing Scripts · Bitcoin Wallet · Threat Intelligence API Integration · Task Automation |
 | [🗂️ **Documentation & Reporting**](documentation/) | Audit Reports · Incident Reports · Lessons Learned · SOC Playbooks · SIEM Dashboards · Case Management (TheHive/JIRA) |
 | [🎯 **Pentesting & Adversarial Simulation**](pentest/) | Vulnerability Discovery · Exploitation · Privilege Escalation · Lateral Movement · Post-Exploitation · Metasploit · Burp Suite · Kali Linux |
 | [🐧 **Linux & SQL Administration**](linux-sql/) | Reconnaissance · Exploitation · Privilege Escalation · Post-Exploitation · Web Application Testing · Burp Suite · Metasploit |
