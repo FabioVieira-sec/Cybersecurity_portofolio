@@ -4,7 +4,7 @@
 
 <h2 >👋 Welcome!</h2>
 
-Here I share my work, projects, and everything I’m learning along my journey in technology.  
+Here I share my work, projects, and everything I’m learning along my journey in Cybersecurity.  
 I’m passionate about growing, creating, and continuously improving my skills.
 
 Linkedin: https://www.linkedin.com/in/fabiovieiracy
