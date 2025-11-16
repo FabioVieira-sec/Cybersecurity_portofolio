@@ -16,7 +16,7 @@ Email: f.vieira01t01@gmail.com
 
 | Skill Camps | Skills  |
 |-----------|---------------------|
-| [🧠 **Security Monitoring, Detection & Response**](detection-response/) | Splunk(Splunk/) · Log Analysis · Threat Detection · MITRE ATT&CK Mapping · Incident Handling |
+| [🧠 **Security Monitoring, Detection & Response**](detection-response/) | [Splunk](Splunk/). · Log Analysis · Threat Detection · MITRE ATT&CK Mapping · Incident Handling |
 | [🌐 **Network Traffic Analysis**](network-analysis/) | Packet Inspection · DNS/HTTP Analysis · Wireshark · Zeek · tcpdump |
 | [💻 **Endpoint Security & Forensics**](endpoint/) | Sysmon · Windows Event Logs · Linux Auditd · Malware Behavior Analysis · Persistence Detection|
 | [🧱 **Vulnerability & Risk Management**](vulnerability-management/) |Vulnerability Scanning (OpenVAS/Nessus) · Risk Assessment · Compliance (CIS/NIST)  |
@@ -24,5 +24,6 @@ Email: f.vieira01t01@gmail.com
 | [🗂️ **Documentation & Reporting**](documentation/) | Audit Reports · Incident Reports · Playbooks · Case Management (TheHive/JIRA) |
 | [🎯 **Pentesting & Adversarial Simulation**](pentest/) | Vulnerability Discovery · Exploitation · Metasploit · Burp Suite · Kali Linux |
 | [🐧 **Linux & SQL Administration**](linux-sql/) | SQL Queries· User & Permission Management · Process and Service Monitoring |
+| [🐧 **Investigations & Threat Intelligence**](Investigations/) | SQL Queries· User & Permission Management · Process and Service Monitoring |
 
 
