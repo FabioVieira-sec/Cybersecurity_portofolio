@@ -16,8 +16,8 @@ Email: f.vieira01t01@gmail.com
 
 | Skill Camps | Skills  |
 |-----------|---------------------|
-| [🧠 **Security Monitoring, Detection & Response**](detection-response/) | [Splunk](detection-response/Splunk/). · [ELK](detection-response/ELK/) · Threat Detection · MITRE ATT&CK Mapping · Incident Handling |
-| [🌐 **Network Traffic Analysis**](network-analysis/) | Packet Inspection · DNS/HTTP Analysis · [Wireshark](network-analysis/Wireshark/) · Zeek · tcpdump |
+| [🧠 **Security Monitoring, Detection & Response**](detection-response/) | [Splunk](detection-response/Splunk/). · [ELK](detection-response/ELK/) · [Snort](detection-response/snort/) · MITRE ATT&CK Mapping · Incident Handling |
+| [🌐 **Network Traffic Analysis**](network-analysis/) | Packet Inspection · [Firewall](network-analysis/firewall/) · [Wireshark](network-analysis/Wireshark/) · Zeek · tcpdump |
 | [💻 **Endpoint Security & Forensics**](endpoint/) | Sysmon · Windows Event Logs · Linux Auditd · Malware Behavior Analysis · Persistence Detection|
 | [🧱 **Vulnerability & Risk Management**](vulnerability-management/) |Vulnerability Scanning (OpenVAS/Nessus) · Risk Assessment · Compliance (CIS/NIST)  |
 | [⚙️ **Automation & Scripting**](automation/) | Python Automation · Log Parsing Scripts · Bitcoin Wallet · Task Automation |
