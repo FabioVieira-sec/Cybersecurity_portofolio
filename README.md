@@ -18,7 +18,7 @@ Email: f.vieira01t01@gmail.com
 |-----------|---------------------|
 | [🧠 **Security Monitoring, Detection & Response**](detection-response/) | [Splunk](detection-response/Splunk/). · [ELK](detection-response/ELK/) · [Snort](detection-response/snort/) · [Microsoft Sentinel](detection-response/Sentinel/)  |
 | [🌐 **Network Traffic Analysis**](network-analysis/) | Packet Inspection · [Firewall](network-analysis/firewall/) · [Wireshark](network-analysis/Wireshark/) · Zeek · tcpdump |
-| [💻 **Endpoint Security & Forensics**](endpoint/) | Sysmon · Windows Event Logs · Linux Auditd · Malware Behavior Analysis · Persistence Detection|
+| [💻 **Endpoint Security & Forensics**](endpoint/) | Sysmon · Windows Event Logs · [YARA](endpoint/YARA/) · Malware Behavior Analysis · Persistence Detection|
 | [🧱 **Vulnerability & Risk Management**](vulnerability-management/) |Vulnerability Scanning (OpenVAS/Nessus) · Risk Assessment · Compliance (CIS/NIST)  |
 | [⚙️ **Automation & Scripting**](automation/) | Python Automation · Log Parsing Scripts · Bitcoin Wallet · Task Automation |
 | [🗂️ **Documentation & Reporting**](documentation/) | Audit Reports · Incident Reports · Playbooks · Case Management (TheHive/JIRA) |
