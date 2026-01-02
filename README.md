@@ -26,7 +26,7 @@ Inside each folder, I document labs, notes, and practical exercises related to t
 ----------------------------
 |[eJPT](certs/eJPT/)|
 
-|[Google Cybersecurity Certificate](certs/googlecert/)|
+|[Google Cybersecurity Certificate](certs/Coursera 2GIISNMF0ERH.pdf/)|
 
 |[CertiProf – CAPC](certs/generate-pdf.pdf/)|
 
