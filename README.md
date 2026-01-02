@@ -28,7 +28,7 @@ Inside each folder, I document labs, notes, and practical exercises related to t
 
 |[Google Cybersecurity Certificate](certs/googlecert/)|
 
-|[CertiProf – CAPC](certs/capc/)|
+|[CertiProf – CAPC](certs/generate-pdf.pdf/)|
 
  🔴 Offensive Security
 
