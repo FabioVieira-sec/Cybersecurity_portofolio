@@ -17,9 +17,12 @@ Intigriti: https://app.intigriti.com/researcher/profile/hfafas
 Each tool listed inside a Skill Camp represents a folder in this GitHub repository.
 Inside each folder, I document labs, notes, and practical exercises related to that tool.
 
-|🎓 Certifications|
+🎓 Certifications
+----------------------------
 |[eJPT](eJPT/)|
+
 |[Google Cybersecurity Certificate](googlecert/)|
+
 |[CertiProf – CAPC](capc/)|
 
  🔴 Offensive Security
