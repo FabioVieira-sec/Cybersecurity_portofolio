@@ -14,7 +14,7 @@ THM: https://tryhackme.com/p/f.v
 Intigriti: https://app.intigriti.com/researcher/profile/hfafas
 
 🧭 Repository Structure
-
+--------------------------------------------------------
 Each tool listed inside a Skill Camp represents a folder in this GitHub repository.
 Inside each folder, I document labs, notes, and practical exercises related to that tool.
 
