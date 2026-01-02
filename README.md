@@ -10,6 +10,7 @@ I actively develop and maintain hands-on experience in both areas, focusing on r
 
 Linkedin: https://www.linkedin.com/in/fabiovieiracy
 Email: f.vieira01t01@gmail.com
+THM: https://tryhackme.com/p/f.v
 Intigriti: https://app.intigriti.com/researcher/profile/hfafas
 
 🧭 Repository Structure
