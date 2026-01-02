@@ -19,11 +19,11 @@ Inside each folder, I document labs, notes, and practical exercises related to t
 
 🎓 Certifications
 ----------------------------
-|[eJPT](eJPT/)|
+|[eJPT](certs/eJPT/)|
 
-|[Google Cybersecurity Certificate](googlecert/)|
+|[Google Cybersecurity Certificate](certs/googlecert/)|
 
-|[CertiProf – CAPC](capc/)|
+|[CertiProf – CAPC](certs/capc/)|
 
  🔴 Offensive Security
 
