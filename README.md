@@ -22,7 +22,7 @@ Each tool or category listed below represents a folder in this repository. Insid
 ## 🎓 Certifications
 | | | |
 | :--- | :--- | :--- |
-| [**eJPT**](certs/eJPT/) | [**Google Cybersecurity**](certs/Coursera_2GIISNMF0ERH.pdf/) | [**CertiProf – CAPC**](certs/generate-pdf.pdf/) |
+| [**Google Cybersecurity**](certs/Coursera_2GIISNMF0ERH.pdf/) | [**CertiProf – CAPC**](certs/generate-pdf.pdf/) |
 
 ---
 
