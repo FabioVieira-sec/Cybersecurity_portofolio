@@ -48,7 +48,6 @@ Each tool or category listed below represents a folder in this repository. Insid
 | [**Security Monitoring & SIEM**](detection-response/) | **Splunk** · **ELK Stack** · **Microsoft Sentinel** · Log Analysis |
 | [**Network Traffic Analysis**](network-analysis/) | Packet Inspection · **Wireshark** · **Zeek** · Firewall Rules · tcpdump |
 | [**Endpoint Security & Forensics**](endpoint/) | **Sysmon** · Windows Event Logs · **YARA** Rules · Malware Behavior |
-| [**Vulnerability Management**](vulnerability-management/) | Risk Assessment · Compliance (CIS/NIST) · **OpenVAS** · Patching |
 | [**Threat Intel & OSINT**](Investigations/) | Digital Forensics · Open Source Intelligence · Threat Hunting |
 | [**Automation & Scripting**](automation/) | **Python** · Log Parsing · Task Automation · Bash Scripting |
 | [**System Administration**](linux-sql/) | Linux Hardening · SQL Queries · User & Permission Management |
