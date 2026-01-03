@@ -6,7 +6,7 @@
 
 This repository documents my practical cybersecurity skills, covering both **Offensive Security** (Pentesting / Bug Bounty) and **Defensive Security** (SOC / Blue Team).
 
-I actively develop and maintain hands-on experience in both areas, focusing on real tools, realistic scenarios, and documented labs. The goal is simple: demonstrate practical ability, not just theoretical knowledge.
+I actively develop and maintain hands-on experience in both areas, focusing on real tools, realistic scenarios, and documented labs. 
 
 * **LinkedIn:** [linkedin.com/in/fabiovieiracy](https://www.linkedin.com/in/fabiovieiracy)
 * **Email:** f.vieira01t01@gmail.com
