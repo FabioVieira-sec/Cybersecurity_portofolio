@@ -33,9 +33,7 @@ Each tool or category listed below represents a folder in this repository. Insid
 | :--- | :--- |
 | [**Web Application Security**](websec/) | **Burp Suite** · OWASP Top 10 · XSS · SQLi · Logic Flaws |
 | [**API Security Pentesting**](websec/apisecurity/) | REST API Analysis · Postman · Broken Object Level Auth (BOLA) |
-| [**Reconnaissance**](netpen/) | Subdomain Enumeration · Fuzzing · Asset Discovery · **Masscan** |
-| [**Infrastructure & Network**](netpen/) | **Nmap** · Port Scanning · Active Directory · **Nessus** · Metasploit |
-| [**Traffic Analysis (Offensive)**](penshark/) | **Wireshark** · Data Exfiltration Analysis · Credential Sniffing |
+| [**Network & Infrastructure**](netpen/) | Recon (Nmap/Masscan) · Traffic Analysis (Wireshark) · Exploitation (Nessus/Metasploit) · Active Directory |
 | [**Reporting & Methodology**](pentestdoc/) | **Markdown** · OWASP-style Reporting · Executive Summaries |
 
 ---
