@@ -1,24 +1,3 @@
-<h1 > Fábio Vieira's Practical Cybersecurity Portfolio </h1>
-
----
-
-<h2 >👋 Overview</h2>
-
-This repository documents my practical cybersecurity skills, covering both Offensive Security (Pentesting / Bug Bounty) and Defensive Security (SOC / Blue Team).
-
-I actively develop and maintain hands-on experience in both areas, focusing on real tools, realistic scenarios, and documented labs. The goal is simple: demonstrate practical ability, not just theoretical knowledge.
-
-Linkedin: https://www.linkedin.com/in/fabiovieiracy
-Email: f.vieira01t01@gmail.com
-THM: https://tryhackme.com/p/f.v
-
-
-
-
-🧭 Repository Structure
---------------------------------------------------------
-Each tool listed inside a Skill Camp represents a folder in this GitHub repository.
-Inside each folder, I document labs, notes, and practical exercises related to that tool.
 
 
 
@@ -88,3 +67,29 @@ Nesta secção, documento o meu processo de exploração, desde o reconhecimento
 | **Bug Bounty & Recon** | Subdomain Enumeration, **Masscan**, Fuzzing, Automation | [Explore Labs (netpen/recon)](netpen/nmap/) |
 | **Documentation & Reporting**|
 
+---
+
+## 🔵 Defensive Security (SOC / Blue Team)
+
+Focado em visibilidade, deteção de ameaças e resposta a incidentes utilizando ferramentas de padrão industrial.
+
+| Domain / Skill Camp | Technical Focus & Tools | Practice & Labs |
+| :--- | :--- | :--- |
+| **Security Monitoring & SIEM** | **Splunk**, **ELK**, **MS Sentinel**, KQL, Dashboards | [Detection Labs (detection-response/)](detection-response/) |
+| **Network Traffic Analysis** | **Wireshark**, Zeek, tcpdump, Packet Inspection | [Analysis Labs (network-analysis/)](network-analysis/) |
+| **Endpoint Security & Forensics**| **YARA**, Sysmon, Event Logs, Malware Behavior | [Forensics Labs (endpoint/)](endpoint/) |
+| **Threat Intelligence** | OSINT, MITRE ATT&CK, Phishing Analysis | [Investigation Labs (Investigations/)](Investigations/) |
+| **Vulnerability Management** | Risk Assessment, Compliance (NIST/CIS), **OpenVAS** | [Risk Labs (vulnerability-management/)](vulnerability-management/) |
+| **Automation & Admin** | **Python**, SQL Queries, Linux Hardening | [Scripts (automation/)](automation/) |
+
+---
+
+## 🧭 Repository Methodology
+
+Para manter o portfólio limpo e profissional, os conteúdos estão organizados da seguinte forma:
+1.  **Tooling Notes:** Cheatsheets e comandos essenciais para consulta rápida.
+2.  **Guided Labs:** Resoluções de plataformas como TryHackMe e HackTheBox.
+3.  **Case Studies:** Relatórios detalhados de pentests completos ou investigações de incidentes complexas.
+
+---
+*“Demonstrating practical ability, not just theoretical knowledge.”*
