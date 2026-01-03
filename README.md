@@ -1,4 +1,4 @@
-<h1> 🛡️ Fábio Vieira's Cybersecurity Portfolio </h1>
+<h1>  Fábio Vieira's Cybersecurity Portfolio </h1>
 
 ---
 
