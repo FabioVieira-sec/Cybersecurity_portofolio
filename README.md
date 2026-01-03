@@ -11,7 +11,7 @@ I actively develop and maintain hands-on experience in both areas, focusing on r
 Linkedin: https://www.linkedin.com/in/fabiovieiracy
 Email: f.vieira01t01@gmail.com
 THM: https://tryhackme.com/p/f.v
-Intigriti: https://app.intigriti.com/researcher/profile/hfafas
+
 
 
 
@@ -34,7 +34,7 @@ Inside each folder, I document labs, notes, and practical exercises related to t
 
 | Skill Camps | Skills  |
 |-----------|---------------------|
-| [ **Bug Bounty & Web Application Security**](websec/) | [Bug Bounty](websec/bugbounty/). · [Burp Suite](websec/burpsuite/) · [API Security](websec/apisecurity/) · OWASP   |
+| [ **Web Application Security**](websec/) | . · [Burp Suite](websec/burpsuite/) · [API Security](websec/apisecurity/) · OWASP   |
 | [ **Network Pentesting**](netpen/) | [Nmap](netpen/nmap/) · [Masscan](netpen/masscan/) · [Wireshark](netpen/penshark/) · [Nessus](netpen/nessus/) |
 | [ **Pentest_Docs**](pentestdoc/) | [Markdown](Markdown/) · [OWASP-style reporting](pentestdoc/OWASPrep/)|
 
@@ -51,4 +51,40 @@ Inside each folder, I document labs, notes, and practical exercises related to t
 | [  **Linux & SQL Administration**](linux-sql/) | SQL Queries· User & Permission Management · Process and Service Monitoring |
 | [ **Investigations & Threat Intelligence**](Investigations/) | OSINT, Web App Security, Network Analysis, Digital Forensics, Threat Intelligence |
 
+
+<h1> 🛡️ Fábio Vieira's Cybersecurity Portfolio </h1>
+
+---
+
+## 👋 Overview
+
+This repository documents my practical cybersecurity skills, covering both **Offensive Security** (Pentesting & Bug Bounty) and **Defensive Security** (SOC & Blue Team). 
+
+My approach is focused on real-world methodology: I don't just use tools; I document the **why** and **how** behind every attack and defense strategy.
+
+* **Linkedin:** [linkedin.com/in/fabiovieiracy](https://www.linkedin.com/in/fabiovieiracy)
+* **TryHackMe:** [tryhackme.com/p/f.v](https://tryhackme.com/p/f.v)
+* **Email:** f.vieira01t01@gmail.com
+
+---
+
+## 🎓 Certifications
+| | | |
+| :--- | :--- | :--- |
+| [**eJPT**](certs/eJPT/) | [**Google Cybersecurity**](certs/Coursera_2GIISNMF0ERH.pdf/) | [**CertiProf – CAPC**](certs/generate-pdf.pdf/) |
+
+---
+
+## 🔴 Offensive Security (Pentesting)
+
+Nesta secção, documento o meu processo de exploração, desde o reconhecimento inicial até à exfiltração de dados e relatório final.
+
+| Domain / Skill Camp | Technical Focus & Tools | Practice & Labs |
+| :--- | :--- | :--- |
+| **Web Application Security** | OWASP Top 10, **Burp Suite**, Logic Bugs | [Explore Labs (websec/)](websec/) |
+| **Authentication & AuthZ** | JWT Bypass, OAuth, IDOR, Session Hijacking | [Explore Labs (websec/auth)](websec/) |
+| **Infrastructure & Network** | **Nmap**, **Nessus**, Metasploit, Active Directory | [Explore Labs (netpen/)](netpen/) |
+| **API Pentesting** | REST/GraphQL Security, Postman, Broken Object Level Auth | [Explore Labs (websec/apisecurity/)](websec/apisecurity/) |
+| **Bug Bounty & Recon** | Subdomain Enumeration, **Masscan**, Fuzzing, Automation | [Explore Labs (netpen/recon)](netpen/nmap/) |
+| **Documentation & Reporting**|
 
