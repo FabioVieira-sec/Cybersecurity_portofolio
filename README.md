@@ -35,7 +35,7 @@ Each tool or category listed below represents a folder in this repository. Insid
 | [**API Security Pentesting**](websec/apisecurity/) | REST API Analysis · Postman · Broken Object Level Auth (BOLA) |
 | [**Reconnaissance**](netpen/) | Subdomain Enumeration · Fuzzing · Asset Discovery · **Masscan** |
 | [**Infrastructure & Network**](netpen/) | **Nmap** · Port Scanning · Active Directory · **Nessus** · Metasploit |
-| [**Traffic Analysis (Offensive)**](netpen/penshark/) | **Wireshark** · Data Exfiltration Analysis · Credential Sniffing |
+| [**Traffic Analysis (Offensive)**](penshark/) | **Wireshark** · Data Exfiltration Analysis · Credential Sniffing |
 | [**Reporting & Methodology**](pentestdoc/) | **Markdown** · OWASP-style Reporting · Executive Summaries |
 
 ---
