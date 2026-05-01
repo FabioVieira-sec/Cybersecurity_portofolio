@@ -10,7 +10,6 @@ I actively develop and maintain hands-on experience in both areas, focusing on r
 
 * **LinkedIn:** [linkedin.com/in/fabiovieiracy](https://www.linkedin.com/in/fabiovieiracy)
 * **Email:** f.vieira01t01@gmail.com
-* **TryHackMe:** [tryhackme.com/p/f.v](https://tryhackme.com/p/f.v)
 
 ---
 
