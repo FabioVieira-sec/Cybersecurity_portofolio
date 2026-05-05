@@ -25,18 +25,6 @@ Each tool or category listed below represents a folder in this repository. Insid
 
 ---
 
-## 🔴 Offensive Security
-*Focus: Vulnerability Assessment, Exploitation, and Reporting.*
-
-| Skill Camps / Categories | Key Skills & Tools |
-| :--- | :--- |
-| [**Web Application Security**](websec/) | **Burp Suite** · OWASP Top 10 · XSS · SQLi · Logic Flaws |
-| [**API Security Pentesting**](websec/apisecurity/) | REST API Analysis · Postman · Broken Object Level Auth (BOLA) |
-| [**Network & Infrastructure**](netpen/) | Recon (Nmap/Masscan) · Traffic Analysis (Wireshark) · Exploitation (Nessus/Metasploit) · Active Directory |
-| [**Reporting & Methodology**](pentestdoc/) | **Markdown** · OWASP-style Reporting · Executive Summaries |
-
----
-
 ## 🔵 Defensive Security
 *Focus: Monitoring, Detection, Response, and Forensics.*
 
