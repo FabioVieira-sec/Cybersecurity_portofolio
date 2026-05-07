@@ -1,0 +1,559 @@
+DLL Hijacking Investigation
+
+"To keep you sharp, your SOC manager has assigned you the task of analyzing older attack logs and providing answers to specific questions."
+
+Scenario
+
+The objective of this investigation was to identify the executable responsible for performing a DLL hijacking attack by analyzing Sysmon logs located in:
+
+C:\Logs\DLLHijack
+Understanding the Attack
+
+DLL Hijacking occurs when a legitimate executable loads a malicious DLL placed in a location controlled by an attacker.
+
+A common technique involves:
+
+Copying a legitimate executable to another directory
+Placing a malicious DLL with the expected name alongside it
+Forcing the executable to load the malicious DLL instead of the legitimate system DLL
+Investigation Strategy
+
+I focused on:
+
+Sysmon Event ID 7 — Image Loaded
+
+This event provides:
+
+Field	Description
+Image	Executable that loaded the DLL
+ImageLoaded	DLL that was loaded
+Signed	Whether the DLL is digitally signed
+Signature	Digital signature information
+
+Because the logs contained many legitimate DLL loads, I reduced noise by excluding common trusted Windows paths such as:
+
+C:\Windows\
+C:\Program Files\
+
+I then focused on suspicious indicators including:
+
+DLLs loaded from:
+ProgramData
+Temp
+Desktop
+Downloads
+Users
+Unsigned DLLs
+Legitimate executables executing outside System32
+PowerShell Investigation Command
+Get-ChildItem "C:\Logs\DLLHijack" -Filter *.evtx |
+ForEach-Object {
+    Get-WinEvent -FilterHashtable @{Path=$_.FullName; Id=7} -ErrorAction SilentlyContinue
+} |
+ForEach-Object {
+    $xml = [xml]$_.ToXml()
+    $d = $xml.Event.EventData.Data
+
+    [PSCustomObject]@{
+        Time        = $_.TimeCreated
+        Image       = ($d | Where-Object {$_.Name -eq "Image"}).'#text'
+        ImageLoaded = ($d | Where-Object {$_.Name -eq "ImageLoaded"}).'#text'
+        Signed      = ($d | Where-Object {$_.Name -eq "Signed"}).'#text'
+        Signature   = ($d | Where-Object {$_.Name -eq "Signature"}).'#text'
+    }
+} |
+Where-Object {
+    $_.ImageLoaded -like "*.dll" -and
+    $_.ImageLoaded -notlike "C:\Windows\*" -and
+    $_.ImageLoaded -notlike "C:\Program Files*" -and
+    (
+        $_.Signed -eq "false" -or
+        $_.ImageLoaded -like "C:\Users\*" -or
+        $_.ImageLoaded -like "*\Temp\*" -or
+        $_.ImageLoaded -like "*\Desktop\*" -or
+        $_.ImageLoaded -like "*\Downloads\*" -or
+        $_.ImageLoaded -like "*\ProgramData\*"
+    )
+} |
+Sort-Object Time |
+Format-List
+Suspicious Events Identified
+Time        : 4/27/2022 6:39:11 PM
+Image       : C:\ProgramData\Dism.exe
+ImageLoaded : C:\ProgramData\DismCore.dll
+Signed      : false
+Signature   : -
+
+Additional related event:
+
+Time        : 4/27/2022 6:39:30 PM
+Image       : C:\Windows\System32\rundll32.exe
+ImageLoaded : C:\ProgramData\DismCore.dll
+Signed      : false
+Signature   : -
+Conclusion
+
+The executable responsible for the DLL hijacking attack was:
+
+Dism.exe
+
+This conclusion was reached because:
+
+Dism.exe normally resides in:
+C:\Windows\System32\
+However, a copy was found executing from:
+C:\ProgramData\
+The executable loaded:
+DismCore.dll
+
+also located in ProgramData and lacking a valid digital signature.
+
+This behavior strongly indicates DLL hijacking, where an attacker copied a legitimate executable into a writable directory and placed a malicious DLL alongside it in order to force the executable to load attacker-controlled code.
+
+Unmanaged PowerShell Execution Investigation
+Scenario
+
+The objective of this investigation was to identify the process responsible for executing unmanaged PowerShell code by analyzing logs located in:
+
+C:\Logs\PowershellExec
+Understanding the Attack
+
+Unmanaged PowerShell refers to PowerShell execution occurring inside another process without directly launching:
+
+powershell.exe
+
+Instead, attackers inject the .NET runtime and PowerShell components into another legitimate process to evade detection.
+
+Normally, PowerShell activity would involve:
+
+powershell.exe
+
+loading .NET-related DLLs such as:
+
+clr.dll
+clrjit.dll
+mscoree.dll
+Investigation Strategy
+
+I focused on:
+
+Sysmon Event ID 7 — Image Loaded
+
+The goal was to identify processes that:
+
+Were NOT:
+powershell.exe
+pwsh.exe
+powershell_ise.exe
+BUT still loaded .NET runtime DLLs
+
+Indicators used:
+
+mscoree.dll
+clr.dll
+clrjit.dll
+System.Management.Automation.dll
+PowerShell Investigation Command
+Get-ChildItem "C:\Logs\PowershellExec" -Filter *.evtx |
+ForEach-Object {
+    Get-WinEvent -FilterHashtable @{Path=$_.FullName; Id=7} -ErrorAction SilentlyContinue
+} |
+ForEach-Object {
+    $xml = [xml]$_.ToXml()
+    $d = $xml.Event.EventData.Data
+
+    [PSCustomObject]@{
+        Time        = $_.TimeCreated
+        Image       = ($d | Where-Object {$_.Name -eq "Image"}).'#text'
+        ImageLoaded = ($d | Where-Object {$_.Name -eq "ImageLoaded"}).'#text'
+        Signed      = ($d | Where-Object {$_.Name -eq "Signed"}).'#text'
+        Signature   = ($d | Where-Object {$_.Name -eq "Signature"}).'#text'
+    }
+} |
+Where-Object {
+    (
+        $_.ImageLoaded -like "*clr.dll" -or
+        $_.ImageLoaded -like "*clrjit.dll" -or
+        $_.ImageLoaded -like "*mscoree.dll" -or
+        $_.ImageLoaded -like "*System.Management.Automation.dll"
+    ) -and
+    $_.Image -notlike "*powershell.exe" -and
+    $_.Image -notlike "*pwsh.exe" -and
+    $_.Image -notlike "*powershell_ise.exe"
+} |
+Sort-Object Time |
+Format-List
+Suspicious Events Identified
+Time        : 4/27/2022 6:59:42 PM
+Image       : C:\Program Files\WindowsApps\Microsoft.WindowsCalculator_10.1906.55.0_x64__8wekyb3d8bbwe\Calculator.exe
+ImageLoaded : C:\Windows\System32\mscoree.dll
+Time        : 4/27/2022 6:59:42 PM
+Image       : C:\Program Files\WindowsApps\Microsoft.WindowsCalculator_10.1906.55.0_x64__8wekyb3d8bbwe\Calculator.exe
+ImageLoaded : C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
+Time        : 4/27/2022 6:59:42 PM
+Image       : C:\Program Files\WindowsApps\Microsoft.WindowsCalculator_10.1906.55.0_x64__8wekyb3d8bbwe\Calculator.exe
+ImageLoaded : C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clrjit.dll
+Conclusion
+
+The process responsible for executing unmanaged PowerShell code was:
+
+Calculator.exe
+
+This conclusion was based on the fact that Calculator.exe, which normally should not load .NET PowerShell-related components, was observed loading multiple .NET runtime DLLs commonly associated with unmanaged PowerShell execution techniques.
+
+Process Injection Investigation
+Scenario
+
+After identifying that Calculator.exe executed unmanaged PowerShell code, the next objective was to determine which process injected into it.
+
+Understanding the Attack
+
+Attackers frequently use:
+
+Process Injection
+Remote Thread Creation
+DLL Injection
+
+to execute malicious code inside legitimate processes.
+
+The most relevant event for this behavior is:
+
+Sysmon Event ID 8 — CreateRemoteThread
+
+This event records when one process creates a thread inside another process.
+
+Investigation Strategy
+
+I searched for:
+
+TargetImage = Calculator.exe
+
+while analyzing Event ID 8 entries.
+
+PowerShell Investigation Command
+Get-ChildItem "C:\Logs\PowershellExec" -Filter *.evtx |
+ForEach-Object {
+    Get-WinEvent -FilterHashtable @{Path=$_.FullName; Id=8} -ErrorAction SilentlyContinue
+} |
+ForEach-Object {
+    $xml = [xml]$_.ToXml()
+    $d = $xml.Event.EventData.Data
+
+    [PSCustomObject]@{
+        Time          = $_.TimeCreated
+        SourceImage   = ($d | Where-Object {$_.Name -eq "SourceImage"}).'#text'
+        TargetImage   = ($d | Where-Object {$_.Name -eq "TargetImage"}).'#text'
+        StartModule   = ($d | Where-Object {$_.Name -eq "StartModule"}).'#text'
+        StartFunction = ($d | Where-Object {$_.Name -eq "StartFunction"}).'#text'
+    }
+} |
+Where-Object {
+    $_.TargetImage -like "*Calculator.exe"
+} |
+Format-List
+Suspicious Events Identified
+Time          : 4/27/2022 6:59:42 PM
+SourceImage   : C:\Windows\System32\rundll32.exe
+TargetImage   : C:\Program Files\WindowsApps\Microsoft.WindowsCalculator_10.1906.55.0_x64__8wekyb3d8bbwe\Calculator.exe
+StartModule   : -
+StartFunction : -
+
+Additional event:
+
+Time          : 4/27/2022 7:00:13 PM
+SourceImage   : C:\Windows\System32\rundll32.exe
+TargetImage   : C:\Program Files\WindowsApps\Microsoft.WindowsCalculator_10.1906.55.0_x64__8wekyb3d8bbwe\Calculator.exe
+StartModule   : -
+StartFunction : -
+Conclusion
+
+The process responsible for injecting into Calculator.exe was:
+
+rundll32.exe
+
+This conclusion was based on the SourceImage field from:
+
+Sysmon Event ID 8 — CreateRemoteThread
+
+Relationship identified:
+
+rundll32.exe → Calculator.exe
+LSASS Dump Investigation
+Scenario
+
+The objective of this investigation was to identify the process responsible for performing suspicious access against:
+
+lsass.exe
+
+which is commonly associated with credential dumping activity.
+
+Understanding the Attack
+
+lsass.exe (Local Security Authority Subsystem Service) stores authentication-related data and credentials in memory, making it a common target for tools such as:
+
+Mimikatz
+Process Hacker
+Dumpert
+comsvcs.dll dumping
+Investigation Strategy
+
+I focused on:
+
+Sysmon Event ID 10 — Process Access
+
+This event records when one process attempts to access another process.
+
+Relevant fields:
+
+Field	Description
+SourceImage	Process initiating access
+TargetImage	Target process
+GrantedAccess	Access level requested
+
+The investigation focused on:
+
+TargetImage = lsass.exe
+
+Noise reduction included excluding common legitimate system processes such as:
+
+svchost.exe
+MsMpEng.exe
+csrss.exe
+wininit.exe
+
+The objective was to identify:
+
+Unusual processes
+Suspicious execution paths
+High access permissions
+PowerShell Investigation Command
+Get-ChildItem "C:\Logs\Dump" -Filter *.evtx |
+ForEach-Object {
+    Get-WinEvent -FilterHashtable @{Path=$_.FullName; Id=10} -ErrorAction SilentlyContinue
+} |
+ForEach-Object {
+
+    $xml = [xml]$_.ToXml()
+    $d = $xml.Event.EventData.Data
+
+    [PSCustomObject]@{
+        Time          = $_.TimeCreated
+        SourceImage   = ($d | Where-Object {$_.Name -eq "SourceImage"}).'#text'
+        TargetImage   = ($d | Where-Object {$_.Name -eq "TargetImage"}).'#text'
+        GrantedAccess = ($d | Where-Object {$_.Name -eq "GrantedAccess"}).'#text'
+    }
+} |
+Where-Object {
+    $_.TargetImage -like "*lsass.exe"
+} |
+Format-List
+Suspicious Event Identified
+Time          : 4/27/2022 7:08:56 PM
+SourceImage   : C:\Users\waldo\Downloads\processhacker-3.0.4801-bin\64bit\ProcessHacker.exe
+TargetImage   : C:\Windows\system32\lsass.exe
+GrantedAccess : 0x1fffff
+Analysis
+
+The strongest indicator was:
+
+GrantedAccess : 0x1fffff
+
+This value corresponds to extremely high privileges, effectively equivalent to:
+
+PROCESS_ALL_ACCESS
+
+Credential dumping tools require this level of access to:
+
+Read LSASS memory
+Extract NTLM hashes
+Dump plaintext credentials
+Enumerate security tokens
+
+Additionally, the executable was launched from:
+
+C:\Users\waldo\Downloads\
+
+which further increased suspicion because legitimate administrative tools typically do not operate against LSASS from a Downloads directory.
+
+Conclusion
+
+The process responsible for the LSASS dump activity was:
+
+ProcessHacker.exe
+Post-Dump Login Investigation
+Scenario
+
+After identifying LSASS dumping activity, the next objective was to determine whether the stolen credentials were later used for malicious authentication activity.
+
+Investigation Logic
+
+The reasoning followed this chain:
+
+LSASS Dump
+→ Credential Theft
+→ Potential Credential Reuse
+
+The dump activity occurred around:
+
+7:08 PM
+
+Therefore, I analyzed authentication events occurring after that timestamp.
+
+Relevant Security Events
+Event ID	Description
+4624	Successful Logon
+4625	Failed Logon
+4672	Special Privileges Assigned
+
+The primary focus was:
+
+Event ID 4624 — Successful Logon
+PowerShell Investigation Command
+Get-ChildItem "C:\Logs\Dump" -Filter *.evtx |
+ForEach-Object {
+    Get-WinEvent -FilterHashtable @{Path=$_.FullName; Id=4624} -ErrorAction SilentlyContinue
+} |
+Where-Object {
+    $_.TimeCreated -gt (Get-Date "04/27/2022 7:08:00 PM")
+} |
+ForEach-Object {
+
+    $xml = [xml]$_.ToXml()
+    $d = $xml.Event.EventData.Data
+
+    [PSCustomObject]@{
+        Time        = $_.TimeCreated
+        User        = ($d | Where-Object {$_.Name -eq "TargetUserName"}).'#text'
+        LogonType   = ($d | Where-Object {$_.Name -eq "LogonType"}).'#text'
+        Workstation = ($d | Where-Object {$_.Name -eq "WorkstationName"}).'#text'
+        SourceIP    = ($d | Where-Object {$_.Name -eq "IpAddress"}).'#text'
+    }
+} |
+Format-Table -AutoSize
+Results
+
+The observed authentication events after the dump activity showed:
+
+Logon Type = 5
+Analysis
+
+Logon Type 5 corresponds to:
+
+Service Logon
+
+This authentication type is commonly associated with:
+
+Windows Services
+Scheduled Tasks
+Service Accounts
+
+No indicators suggesting malicious credential reuse were observed.
+
+Conclusion
+
+Was there evidence of an ill-intended login after the LSASS dump?
+
+No
+Strange Parent-Child Relationship Investigation
+Scenario
+
+The objective of this investigation was to identify a process used for temporary code execution based on an abnormal parent-child process relationship.
+
+This type of behavior is commonly associated with:
+
+PPID Spoofing
+Process Masquerading
+Temporary Command Execution
+Investigation Strategy
+
+I focused on:
+
+Sysmon Event ID 1 — Process Create
+
+This event provides:
+
+Executed process
+Parent process
+Command line arguments
+
+To reduce noise, I excluded common legitimate parent processes such as:
+
+explorer.exe
+cmd.exe
+powershell.exe
+services.exe
+svchost.exe
+
+I then searched for temporary command execution patterns involving:
+
+cmd.exe
+whoami.exe
+powershell.exe
+
+spawned by unusual parent processes.
+
+PowerShell Investigation Command
+Get-ChildItem "C:\Logs\StrangePPID" -Filter *.evtx |
+ForEach-Object {
+    Get-WinEvent -FilterHashtable @{Path=$_.FullName; Id=1} -ErrorAction SilentlyContinue
+} |
+ForEach-Object {
+
+    $xml = [xml]$_.ToXml()
+    $d = $xml.Event.EventData.Data
+
+    [PSCustomObject]@{
+        Time              = $_.TimeCreated
+        Image             = ($d | Where-Object {$_.Name -eq "Image"}).'#text'
+        ParentImage       = ($d | Where-Object {$_.Name -eq "ParentImage"}).'#text'
+        CommandLine       = ($d | Where-Object {$_.Name -eq "CommandLine"}).'#text'
+        ParentCommandLine = ($d | Where-Object {$_.Name -eq "ParentCommandLine"}).'#text'
+    }
+} |
+Where-Object {
+
+    $_.ParentImage -notlike "*explorer.exe" -and
+    $_.ParentImage -notlike "*cmd.exe" -and
+    $_.ParentImage -notlike "*powershell.exe" -and
+    $_.ParentImage -notlike "*services.exe" -and
+    $_.ParentImage -notlike "*svchost.exe"
+
+} |
+Format-List
+Suspicious Event Identified
+Time              : 4/27/2022 7:18:06 PM
+Image             : C:\Windows\System32\cmd.exe
+ParentImage       : C:\Windows\System32\werfault.exe
+CommandLine       : cmd.exe /c whoami
+ParentCommandLine : "C:\Windows\System32\werfault.exe"
+Analysis
+
+The activity was considered suspicious because:
+
+werfault.exe
+
+is normally associated with:
+
+Windows Error Reporting
+
+and does not typically spawn:
+
+cmd.exe
+
+as a child process.
+
+Additionally, the executed command:
+
+cmd.exe /c whoami
+
+is extremely common in:
+
+Quick execution tests
+Privilege validation
+Post-exploitation activity
+PPID spoofing scenarios
+Conclusion
+
+The process used for temporary code execution was:
+
+cmd.exe
