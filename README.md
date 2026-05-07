@@ -1,69 +1,56 @@
-<h1 align="center">Fábio Vieira's Cybersecurity Portfolio</h1>
+# Fábio Vieira — Cybersecurity Portfolio
+
+Practical cybersecurity portfolio focused on blue team operations, investigations, system analysis, and hands-on labs.
+
+This repository is where I document technical exercises, write-ups, investigations, and larger projects as I continue building experience in cybersecurity and IT.
 
 ---
 
-> ⚠️ This portfolio is continuously updated with new investigations, labs, and technical projects.
+## Links
 
-## 👋 Overview
-
-This repository documents my hands-on cybersecurity journey, focused on Defensive Security, Security Operations, and practical incident investigation.
-
-Here you will find technical documentation, walkthroughs, and projects covering areas such as:
-- Log Analysis & SIEM
-- Network Traffic Analysis
-- Endpoint Investigation
-- Threat Hunting
-- System Administration
-- Security Automation
-
-The goal of this portfolio is to demonstrate practical skills through realistic scenarios, structured analysis, and clear technical documentation.
+- LinkedIn: https://www.linkedin.com/in/fabiovieiracy
+- YouTube: https://www.youtube.com/@hfafas
+- Hack The Box: https://profile.hackthebox.com/profile/019e022a-d3c9-712b-b934-8bb56c4e296e
+- Email: f.vieira01t01@gmail.com
 
 ---
 
-## 🔗 Links
-
-- **LinkedIn:** [linkedin.com/in/fabiovieiracy](https://www.linkedin.com/in/fabiovieiracy)
-- **YouTube:** [youtube.com/@hfafas](https://www.youtube.com/@hfafas)
-- **Hack The Box:** [HTB Profile](https://profile.hackthebox.com/profile/019e022a-d3c9-712b-b934-8bb56c4e296e)
-- **Email:** f.vieira01t01@gmail.com
-
----
-
-## 🎓 Certifications
+## Certifications
 
 | Certification | Status |
 | :--- | :--- |
-| Google Cybersecurity Certificate | In Progress |
+| [Google Cybersecurity Certificate](certs/Coursera_2GIISNMF0ERH.pdf/) | Completed |
+| [CertiProf – CAPC](certs/generate-pdf.pdf/) | Completed |
 | HTB CDSA | In Progress |
-| CertiProf – CAPC | Completed |
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 | Category | Description |
 | :--- | :--- |
-| [**Detection & Response**](detection-response/) | SIEM investigations, alert triage, log analysis and incident response walkthroughs |
-| [**Network Analysis**](network-analysis/) | Wireshark, tcpdump, traffic investigations and network troubleshooting |
-| [**Endpoint & Forensics**](endpoint/) | Windows Event Logs, Sysmon analysis, endpoint investigations and malware behavior |
-| [**Investigations**](investigations/) | Security investigations, threat hunting exercises and practical analysis cases |
-| [**Automation & Scripting**](automation/) | Python scripts, automation tasks and log parsing utilities |
-| [**Linux & Administration**](linux-sql/) | Linux fundamentals, system administration and hardening |
-| [**Documentation**](documentation/) | Reports, SOPs, notes and technical documentation |
-| [**Projects**](projects/) | Larger projects such as Home Labs, security environments and future long-form work |
+| [Detection & Response](detection-response/) | SIEM investigations, log analysis, alert triage |
+| [Network Analysis](network-analysis/) | Wireshark, tcpdump, traffic investigations |
+| [Endpoint & Forensics](endpoint/) | Sysmon, Windows Event Logs, endpoint investigations |
+| [Investigations](investigations/) | Threat hunting and practical investigations |
+| [Automation](automation/) | Python scripts and automation |
+| [Linux & Administration](linux-sql/) | Linux administration and system basics |
+| [Documentation](documentation/) | Notes, reports, and technical documentation |
+| [Projects](projects/) | Home labs and larger long-term projects |
 
 ---
 
-## 🔍 Featured Work
+## Current Focus
 
-- Security log investigations using SIEM platforms
-- Network traffic analysis with Wireshark and tcpdump
-- Windows Event Log and Sysmon investigations
-- Threat hunting exercises and IOC identification
-- Hands-on troubleshooting and incident analysis
+- Security Operations (SOC)
+- Log Analysis & SIEM
+- Network Traffic Analysis
+- Threat Hunting
+- Windows Event Investigation
+- Linux Administration
 
 ---
 
-## 📝 Notes
+## Notes
 
-Most walkthroughs and technical investigations are also shared through my LinkedIn and YouTube channel as part of my continuous learning journey.
+Most of the practical investigations and projects documented here are also shared through LinkedIn and YouTube as part of my learning journey.
