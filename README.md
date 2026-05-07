@@ -10,6 +10,7 @@ This repository is where I document technical exercises, write-ups, investigatio
 
 - LinkedIn: https://www.linkedin.com/in/fabiovieiracy
 - YouTube: https://www.youtube.com/@hfafas
+- Medium: https://medium.com/@f.vieira01t01
 - Hack The Box: https://profile.hackthebox.com/profile/019e022a-d3c9-712b-b934-8bb56c4e296e
 - Email: f.vieira01t01@gmail.com
 
