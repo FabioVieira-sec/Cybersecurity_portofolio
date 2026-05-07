@@ -730,13 +730,4 @@ cmd.exe
 
 ---
 
-# Final Answers
 
-| Question | Answer |
-|---|---|
-| Q1 | `Dism.exe` |
-| Q2 | `Calculator.exe` |
-| Q3 | `rundll32.exe` |
-| Q4 | `ProcessHacker.exe` |
-| Q5 | `No` |
-| Q6 | `cmd.exe` |
