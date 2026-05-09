@@ -1,14 +1,9 @@
-# Fábio Vieira — Cybersecurity Portfolio
 <div align="center">
 
-██╗ ██╗███████╗██╗ ██████╗ ██████╗ ███╗ ███╗███████╗
-██║ ██║██╔════╝██║ ██╔════╝██╔═══██╗████╗ ████║██╔════╝
-██║ █╗ ██║█████╗ ██║ ██║ ██║ ██║██╔████╔██║█████╗
-██║███╗██║██╔══╝ ██║ ██║ ██║ ██║██║╚██╔╝██║██╔══╝
-╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗
-╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝ ╚═╝╚══════╝
+# Fábio Vieira — Cybersecurity Portfolio
 
-Cybersecurity Portfolio
+Hands-on investigations, SOC labs, threat hunting, and practical cybersecurity projects.
+
 </div>
 
 ---
