@@ -16,14 +16,6 @@ This repository documents investigations, technical exercises, and security-rela
 
 ---
 
-# Certifications
-
-| Certification | Status |
-| :--- | :--- |
-| [Google Cybersecurity Certificate](certs/Coursera_2GIISNMF0ERH.pdf/) | Completed |
-| [CertiProf – CAPC](certs/generate-pdf.pdf/) | Completed |
-| HTB CDSA | In Progress |
-
 ### Certification Badges
 
 <a href="certs/Coursera_2GIISNMF0ERH.pdf">
@@ -71,3 +63,11 @@ This repository documents investigations, technical exercises, and security-rela
 </table>
 
 ---
+
+# Certifications
+
+| Certification | Status |
+| :--- | :--- |
+| [Google Cybersecurity Certificate](certs/Coursera_2GIISNMF0ERH.pdf/) | Completed |
+| [CertiProf – CAPC](certs/generate-pdf.pdf/) | Completed |
+| HTB CDSA | In Progress |
