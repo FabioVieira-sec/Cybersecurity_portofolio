@@ -44,11 +44,3 @@ Larger projects and home lab environments will be documented here as they are de
 
 ---
 
-## Latest Walkthroughs
-
-- Threat Hunting Investigation — Stuxbot
-- Windows Event Log Analysis
-- Network Traffic Investigation
-- SIEM Alert Triage
-
-More walkthroughs available inside the repository folders and on Medium.
