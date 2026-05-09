@@ -63,7 +63,7 @@ This repository documents investigations, technical exercises, and security-rela
 <tr>
 <td>
 <a href="wait">
-<img src="images/LFI-tub.png" width="400">
+<img src="images/LFI,tub.png" width="400">
 </a>
 </td>
 
