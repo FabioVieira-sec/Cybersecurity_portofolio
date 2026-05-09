@@ -1,8 +1,8 @@
 # Fábio Vieira — Cybersecurity Portfolio
 
-Practical cybersecurity portfolio focused on blue team operations, investigations, system analysis, and hands-on labs.
+Hands-on cybersecurity portfolio focused on blue team operations, investigations, log analysis, and practical SOC-oriented labs.
 
-This repository is where I document technical exercises, write-ups, investigations, and larger projects as I continue building experience in cybersecurity and IT.
+This repository documents investigations, technical exercises, and security-related projects developed throughout my cybersecurity journey.
 
 ---
 
@@ -26,32 +26,29 @@ This repository is where I document technical exercises, write-ups, investigatio
 
 ---
 
-## Repository Structure
+# Projects
+### Coming Soon
 
-| Category | Description |
+Larger projects and home lab environments will be documented here as they are developed.
+
+---
+
+## Portfolio Sections
+
+| Section | Content |
 | :--- | :--- |
-| [Detection & Response](detection-response/) | SIEM investigations, log analysis, alert triage |
-| [Network Analysis](network-analysis/) | Wireshark, tcpdump, traffic investigations |
+| [Detection & Response](detection-response/) | SIEM investigations, alert triage, and log analysis |
+| [Network Analysis](network-analysis/) | Wireshark, tcpdump, packet analysis, and traffic investigations |
 | [Endpoint & Forensics](endpoint/) | Sysmon, Windows Event Logs, endpoint investigations |
-| [Investigations](investigations/) | Threat hunting and practical investigations |
-| [Automation](automation/) | Python scripts and automation |
-| [Linux & Administration](linux-sql/) | Linux administration and system basics |
-| [Documentation](documentation/) | Notes, reports, and technical documentation |
-| [Projects](projects/) | Home labs and larger long-term projects |
+| [Investigations](investigations/) | Threat hunting exercises and walkthroughs |
 
 ---
 
-## Current Focus
+## Latest Walkthroughs
 
-- Security Operations (SOC)
-- Log Analysis & SIEM
-- Network Traffic Analysis
-- Threat Hunting
-- Windows Event Investigation
-- Linux Administration
+- Threat Hunting Investigation — Stuxbot
+- Windows Event Log Analysis
+- Network Traffic Investigation
+- SIEM Alert Triage
 
----
-
-## Notes
-
-Most of the practical investigations and projects documented here are also shared through LinkedIn and YouTube as part of my learning journey.
+More walkthroughs available inside the repository folders and on Medium.
