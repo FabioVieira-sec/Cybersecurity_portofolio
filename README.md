@@ -57,7 +57,7 @@ This repository documents investigations, technical exercises, and security-rela
 
 ---
 
-# Featured Videos
+# Latest Videos
 
 <table>
 <tr>
