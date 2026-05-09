@@ -16,7 +16,7 @@ This repository documents investigations, technical exercises, and security-rela
 
 ---
 
-## Certifications
+# Certifications
 
 | Certification | Status |
 | :--- | :--- |
@@ -24,12 +24,25 @@ This repository documents investigations, technical exercises, and security-rela
 | [CertiProf – CAPC](certs/generate-pdf.pdf/) | Completed |
 | HTB CDSA | In Progress |
 
+### Certification Badges
+
+<a href="certs/Coursera_2GIISNMF0ERH.pdf">
+  <img src="images/google-cybersecurity.png" width="220">
+</a>
+
+<a href="certs/generate-pdf.pdf">
+  <img src="images/capc-cert.png" width="220">
+</a>
+
 ---
 
 # Projects
-### Coming Soon
 
-Larger projects and home lab environments will be documented here as they are developed.
+| Project | Description |
+| :--- | :--- |
+| [Home Lab](projects/homelab/) | Personal cybersecurity home lab environment and infrastructure |
+| [Bitcoin Wallet Testnet](projects/personal_projects/) | Python-based Bitcoin testnet wallet creation and transaction handling |
+| [YARA Hidden Message Investigation](projects/personal_projects/) | File analysis and hidden data extraction using YARA |
 
 ---
 
@@ -44,3 +57,22 @@ Larger projects and home lab environments will be documented here as they are de
 
 ---
 
+# Featured Videos
+
+<table>
+<tr>
+<td>
+<a href="https://www.youtube.com/watch?v=VIDEO_LINK_1">
+<img src="images/stuxbot-thumb.png" width="400">
+</a>
+</td>
+
+<td>
+<a href="https://www.youtube.com/watch?v=VIDEO_LINK_2">
+<img src="images/threathunting-thumb.png" width="400">
+</a>
+</td>
+</tr>
+</table>
+
+---
