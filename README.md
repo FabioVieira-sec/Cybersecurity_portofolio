@@ -41,7 +41,7 @@ Hands-on investigations, SOC labs, threat hunting, and practical cybersecurity p
 | Project | Description |
 | :--- | :--- |
 | [Home Lab](projects/homelab/) | Personal cybersecurity home lab environment and infrastructure |
-| [Personal Projects](projects/personal_projects/) | Python-based Bitcoin testnet wallet creation and transaction handling |
+| [Personal Projects](projects/personal_projects/) | Personal small projects |
 
 ---
 
