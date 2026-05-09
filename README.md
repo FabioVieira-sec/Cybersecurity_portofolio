@@ -27,22 +27,12 @@ This repository documents investigations, technical exercises, and security-rela
 ### Certification Badges
 
 <a href="certs/Coursera_2GIISNMF0ERH.pdf">
-  <img src="images/google-cybersecurity.png" width="220">
+  <img src="https://www.credly.com/badges/55abf222-de74-4105-825f-c060eab9d8d9/linked_in?t=t39a67" width="220">
 </a>
 
 <a href="certs/generate-pdf.pdf">
   <img src="images/capc-cert.png" width="220">
 </a>
-
----
-
-# Projects
-
-| Project | Description |
-| :--- | :--- |
-| [Home Lab](projects/homelab/) | Personal cybersecurity home lab environment and infrastructure |
-| [Bitcoin Wallet Testnet](projects/personal_projects/) | Python-based Bitcoin testnet wallet creation and transaction handling |
-| [YARA Hidden Message Investigation](projects/personal_projects/) | File analysis and hidden data extraction using YARA |
 
 ---
 
@@ -54,6 +44,15 @@ This repository documents investigations, technical exercises, and security-rela
 | [Network Analysis](network-analysis/) | Wireshark, tcpdump, packet analysis, and traffic investigations |
 | [Endpoint & Forensics](endpoint/) | Sysmon, Windows Event Logs, endpoint investigations |
 | [Investigations](investigations/) | Threat hunting exercises and walkthroughs |
+
+---
+
+# Projects
+
+| Project | Description |
+| :--- | :--- |
+| [Home Lab](projects/homelab/) | Personal cybersecurity home lab environment and infrastructure |
+| [Personal Projects](projects/personal_projects/) | Python-based Bitcoin testnet wallet creation and transaction handling |
 
 ---
 
