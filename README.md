@@ -62,14 +62,14 @@ This repository documents investigations, technical exercises, and security-rela
 <table>
 <tr>
 <td>
-<a href="https://www.youtube.com/watch?v=MruKZDZ8T0U">
-<img src="images/stuxbot-thumb.png" width="400">
+<a href="wait">
+<img src="images/LFI-tub.png" width="400">
 </a>
 </td>
 
 <td>
-<a href="https://www.youtube.com/watch?v=VIDEO_LINK_2">
-<img src="images/threathunting-thumb.png" width="400">
+<a href="https://www.youtube.com/watch?v=MruKZDZ8T0U">
+<img src="images/tubnapping.png" width="400">
 </a>
 </td>
 </tr>
