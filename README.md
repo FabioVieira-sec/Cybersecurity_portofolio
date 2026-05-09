@@ -30,10 +30,6 @@ This repository documents investigations, technical exercises, and security-rela
   <img src="images/badge_ggl.png" width="220">
 </a>
 
-<a href="certs/generate-pdf.pdf">
-  <img src="images/capc-cert.png" width="220">
-</a>
-
 ---
 
 ## Portfolio Sections
