@@ -23,6 +23,10 @@ Hands-on investigations, SOC labs, threat hunting, and practical cybersecurity p
   <img src="images/badge_ggl.png" width="220">
 </a>
 
+<a href="https://www.credly.com/badges/abed659b-202f-458b-9d24-689a9d96a280/public_url">
+  <img src="images/splUser.png" width="220">
+</a>
+
 ---
 
 ## Portfolio Sections
