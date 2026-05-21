@@ -24,7 +24,7 @@ Hands-on investigations, SOC labs, threat hunting, and practical cybersecurity p
 </a>
 
 <a href="https://www.credly.com/badges/abed659b-202f-458b-9d24-689a9d96a280/public_url">
-  <img src="images/SplunkCoreCertifiedUser_Badge20260521-31-eerbu0.pdf" width="220">
+  <img src="images/splUser.pdf" width="220">
 </a>
 
 ---
