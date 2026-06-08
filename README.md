@@ -33,6 +33,7 @@ Hands-on investigations, SOC labs, threat hunting, and practical cybersecurity p
 
 | Section | Content |
 | :--- | :--- |
+| [PENTEST \ WEB-SEC](pentest/) | web-security, Linux, AD |
 | [Detection & Response](detection-response/) | SIEM investigations, alert triage, and log analysis |
 | [Network Analysis](network-analysis/) | Wireshark, tcpdump, packet analysis, and traffic investigations |
 | [Endpoint & Forensics](endpoint/) | Sysmon, Windows Event Logs, endpoint investigations |
