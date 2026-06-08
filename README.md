@@ -1,8 +1,9 @@
+```markdown
 <div align="center">
 
 # Fábio Vieira — Cybersecurity Portfolio
 
-Hands-on investigations, SOC labs, threat hunting, and practical cybersecurity projects.
+Hands-on investigations, web application security testing, SOC labs, threat hunting, and practical cybersecurity projects.
 
 </div>
 
@@ -29,28 +30,17 @@ Hands-on investigations, SOC labs, threat hunting, and practical cybersecurity p
 
 ---
 
-## Portfolio Sections
+# 🚨 Offensive Security
+
+Focused on practical web application security testing, vulnerability discovery, and exploitation.
 
 | Section | Content |
 | :--- | :--- |
-| [PENTEST \ WEB-SEC](pentest/) | web-security, Linux, AD |
-| [Detection & Response](detection-response/) | SIEM investigations, alert triage, and log analysis |
-| [Network Analysis](network-analysis/) | Wireshark, tcpdump, packet analysis, and traffic investigations |
-| [Endpoint & Forensics](endpoint/) | Sysmon, Windows Event Logs, endpoint investigations |
-| [Investigations](investigations/) | Threat hunting exercises and walkthroughs |
+| [PENTEST \ WEB-SEC](pentest/) | Burp Suite, OWASP Top 10, API Security, Authentication, Access Control, XSS, SQLi, XXE, SSRF, SSTI, Linux, AD |
 
 ---
 
-# Projects
-
-| Project | Description |
-| :--- | :--- |
-| [Home Lab](projects/homelab/) | Personal cybersecurity home lab environment and infrastructure |
-| [Personal Projects](projects/personal_projects/) | Personal small projects |
-
----
-
-# Latest Videos
+## Latest Pentest Videos
 
 <table>
 <tr>
@@ -70,6 +60,26 @@ Hands-on investigations, SOC labs, threat hunting, and practical cybersecurity p
 
 ---
 
+# 🔵 Defensive Security
+
+| Section | Content |
+| :--- | :--- |
+| [Detection & Response](detection-response/) | SIEM investigations, alert triage, and log analysis |
+| [Network Analysis](network-analysis/) | Wireshark, tcpdump, packet analysis, and traffic investigations |
+| [Endpoint & Forensics](endpoint/) | Sysmon, Windows Event Logs, endpoint investigations |
+| [Investigations](investigations/) | Threat hunting exercises and walkthroughs |
+
+---
+
+# Projects
+
+| Project | Description |
+| :--- | :--- |
+| [Home Lab](projects/homelab/) | Personal cybersecurity home lab environment and infrastructure |
+| [Personal Projects](projects/personal_projects/) | Personal small projects |
+
+---
+
 # Certifications
 
 | Certification | Status |
@@ -78,3 +88,5 @@ Hands-on investigations, SOC labs, threat hunting, and practical cybersecurity p
 | [CertiProf – CAPC](certs/generate-pdf.pdf/) | Completed |
 | [Splunk – Core Certified User](certs/SplunkCoreCertifiedUser_Badge20260521-31-eerbu0.pdf/) | Completed |
 | HTB CDSA | In Progress |
+| HTB CWES | In Progress |
+```
