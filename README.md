@@ -2,7 +2,7 @@
 
 # Fábio Vieira — Cybersecurity Portfolio
 
-CTF , OWASP Top 10 exploitation, and hands-on web app pentesting (HTB Academy, PortSwigger). SOC/blue team background — thinking like both attacker and defender.
+CTF, OWASP Top 10 exploitation, and hands-on web app pentesting (HTB Academy, PortSwigger). SOC/blue team background — thinking like both attacker and defender.
 </div>
 
 ---
