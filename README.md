@@ -18,6 +18,10 @@ CTF, OWASP Top 10 exploitation, and hands-on web app pentesting (HTB Academy, Po
 
 ### Certification Badges
 
+<a href="https://profile.hackthebox.com/profile/019e022a-d3c9-712b-b934-8bb56c4e296e/certificate/HTBCERT-01A344031C">
+  <img src="images/cwesbadge.webp" width="220">
+</a>
+
 <a href="certs/Coursera_2GIISNMF0ERH.pdf">
   <img src="images/badge_ggl.png" width="220">
 </a>
