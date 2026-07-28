@@ -12,6 +12,7 @@ CTF, OWASP Top 10 exploitation, and hands-on web app pentesting (HTB Academy, Po
 - LinkedIn: https://www.linkedin.com/in/fabiovieiracy
 - YouTube: https://www.youtube.com/@hfafas
 - Hack The Box: https://profile.hackthebox.com/profile/019e022a-d3c9-712b-b934-8bb56c4e296e
+- TryHackMe: https://tryhackme.com/p/hfafas
 - Email: f.vieira01t01@gmail.com
 
 ---
