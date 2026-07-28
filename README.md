@@ -80,4 +80,4 @@ CTF, OWASP Top 10 exploitation, and hands-on web app pentesting (HTB Academy, Po
 | [Google Cybersecurity Certificate](certs/Coursera_2GIISNMF0ERH.pdf/) | Completed |
 | [CertiProf – CAPC](certs/generate-pdf.pdf/) | Completed |
 | [Splunk – Core Certified User](certs/SplunkCoreCertifiedUser_Badge20260521-31-eerbu0.pdf/) | Completed |
-| HTB CWES| In Progress |
+| [HTB CWES](certs/cwes)| Completed |
